@@ -1,0 +1,44 @@
+.App {
+  min-height: 100vh;
+  background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+}
+
+.search-form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insert-form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input{
+  width: 10%;
+  border: black;
+  padding: 10px;
+  margin: 1%;
+}
+
+.search-bar{
+  width: 10%;
+  border: none;
+  padding: 10px;
+}
+
+.search-button{
+  background: black;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+}
+
+.albums{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

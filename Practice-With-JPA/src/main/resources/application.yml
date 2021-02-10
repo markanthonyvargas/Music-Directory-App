@@ -1,0 +1,32 @@
+#this is a comment in yml
+
+server:
+  port: 9025
+  
+
+spring:
+  datasource:
+    url: jdbc:postgresql://${AWSDB}/artistDB
+    password: ${AWSPASS}
+    username: ${AWSUSE}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+        jdbc:
+          lob:
+            non_contextual_creation: true
+      
+      
+      
+#inside of a proteries file you'd have to do this:
+# spring.datasource.url = ...stuff
+# spring.datasource.username= ...stuff
+# spring.datasource.password= ...stuff
+# and so on.....
